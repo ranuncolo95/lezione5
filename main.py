@@ -66,4 +66,5 @@ def results(request: Request, input_text: int = Form(...), image = Form(...)):
     return templates.TemplateResponse(
         request=request, 
         name="results.html", 
-        context={"oggetto": oggetti_da_trovare, "risposta": result})
+        context={"oggetto": oggetti_da_trovare, "risposta": result}
+        )
